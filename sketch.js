@@ -241,7 +241,7 @@ function draw() {
   //logs the amp to allow for easier adjustments as I go  
   console.log(qrs);
   // moves the image off from 0,0 in the top left. COULD NOT GET THIS TO CENTER with imageMode(CENTER)
-  translate(width*0.07,height*0.07);
+  //translate(width*0.07,height*0.07);
   // this makes the shapes keep popping up. speed theoretically controlls the amount of shapes but it doesn't seem to respond well. too high and it lags
   for(var i = 0; i < speed ; i++){
   
@@ -318,7 +318,7 @@ function draw() {
    }
   
   console.log(qrs);
-  translate(width*0.07,height*0.07);
+  //translate(width*0.07,height*0.07);
   
   for(var i = 0; i < speed ; i++){
   
