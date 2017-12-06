@@ -27,25 +27,41 @@ function setup() {
 
 function keyTyped(){
     if(key == "1"){
+      //clear();
+      //background();
       scene = 1;
+      //clear();
+      background(0);
       skyrimsound.stop();
-      jokersound.play()
-      //amp.setInput(jokersound);
-      fill(0);
-      rect(0,0,screen.width,screen.height);
+      if(jokersound.isPlaying()){
+      jokersound.stop();}
+      else{
+        jokersound.play();
+      }
+    
+      
     }
     
     if(key == "2"){
+      //clear();
+     // background(0);
       scene = 2;
+      //clear();
+      background(0);
       jokersound.stop();
-      skyrimsound.play();
+      
+      if(skyrimsound.isPlaying()){
+      skyrimsound.stop();}
+      else{
+        skyrimsound.play();
+      }
       //amp.setInput(skyrimsound);
-      fill(0);
-      rect(0,0,screen.width,screen.height);
+      noStroke();
+      
     }
-     else{
-      scene1 = 0;
-   }
+     //else{
+      //scene = 0;
+   //}
 }
 
 function draw() {
